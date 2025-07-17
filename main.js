@@ -146,7 +146,7 @@ document.getElementById('scheduler-form').onsubmit = function(e) {
     `Average Turnaround Time: ${avgTAT}<br>Average Response Time: ${avgRT}`;
 };
 
-// Scheduling algorithms (same as your Java logic)
+// Scheduling algorithms
 function simulateFCFS(procs, gantt) {
   procs.sort((a, b) => a.arrivalTime - b.arrivalTime);
   let time = 0;
@@ -282,4 +282,3 @@ function showMessage(msg, type = "error") {
 
 // Initial render
 renderProcesses();
-
